@@ -186,23 +186,23 @@ ul li {
 }
 
 .card-2 {
-  background-image: url(".\assets\neda-astani-KWTkd7mHqKE-unsplash.jpg");
+  background-image: url("./assets/neda-astani-KWTkd7mHqKE-unsplash.jpg");
 }
 
 .card-3 {
-  background-image: url(".\assets\kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg");
+  background-image: url("./assets/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg");
 }
 
 .card-4 {
-  background-image: url(".\assets\austin-distel-wD1LRb9OeEo-unsplash.jpg");
+  background-image: url("./assets/austin-distel-wD1LRb9OeEo-unsplash.jpg");
 }
 
 .card-5 {
-  background-image: url(".\assets\shawn-powar-dkgxu60Y1RI-unsplash.jpg");
+  background-image: url("./assets/shawn-powar-dkgxu60Y1RI-unsplash.jpg");
 }
 
 .card-6 {
-  background-image: url(".\assets\brendan-church-4bFKX8G419Q-unsplash.jpg");
+  background-image: url("./assets/brendan-church-4bFKX8G419Q-unsplash.jpg");
 }
 
 @media (max-width: 1024px) {
