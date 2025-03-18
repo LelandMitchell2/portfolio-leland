@@ -23,7 +23,7 @@ html, body {
 }
 
 .navbar {
-  background-image: url(".\assets\roman-synkevych-vXInUOv1n84-unsplash.jpg");
+  background-image: url("./assets/roman-synkevych-vXInUOv1n84-unsplash.jpg");
   background-position: center;
   background-size: cover;
   height: 180px;
