@@ -14,7 +14,7 @@ export default function Footer() {
                 borderRadius: '50%',
                 objectFit: 'cover'
                 }} 
-                src="src\assets\github-image.jpg" alt="GitHub" className="footer-icon" />
+                src=".\images\github-image.jpg" alt="GitHub" className="footer-icon" />
             </a>
             <a href="https://www.linkedin.com/in/leland-mitchell-046655183/" target="_blank" rel="noopener noreferrer">
             <img 
@@ -24,7 +24,7 @@ export default function Footer() {
             borderRadius: '50%',
             objectFit: 'cover'
             }} 
-            src="src\assets\linkedinicon.png" alt="LinkedIn" className="footer-icon" />
+            src=".\images\linkedinicon.png" alt="LinkedIn" className="footer-icon" />
             </a>
         </div>
     </footer>
