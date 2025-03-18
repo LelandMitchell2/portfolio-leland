@@ -18,7 +18,7 @@ function App() {
             <div id="root">
                 <Navbar>
                     <Container>
-                        <Navbar.Brand>Leland</Navbar.Brand>
+                        <Navbar.Brand>Leland Mitchell</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ms-auto">

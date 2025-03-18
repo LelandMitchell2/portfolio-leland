@@ -19,7 +19,7 @@ function Project({ title, liveLink, repoLink, className }) {
                     >
                         <img
                             style={{ width: '50px', height: '50px', borderRadius: '50%', objectFit: 'cover' }}
-                            src="./images/github-image.jpg"
+                            src="src\assets\github-image.jpg"
                             alt="GitHub"
                         />
                     </Button>
