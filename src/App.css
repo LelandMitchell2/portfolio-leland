@@ -1,0 +1,301 @@
+html, body {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #ff000088; 
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 180px; 
+  padding-bottom: 80px; 
+  overflow: auto; 
+}
+
+.navbar {
+  background-image: url(".\assets\roman-synkevych-vXInUOv1n84-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 180px;
+  background-repeat: no-repeat;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #888383;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+  white-space: nowrap;
+}
+
+.navbar .nav-link {
+  display: flex;
+  align-items: center;
+  color: #888383;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.navbar .nav-link:hover {
+  color: #6ddb3a; 
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+header {
+  color: #fff; 
+  text-align: left;
+  font-size: 2.1rem;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  background-color: #1e1e1e; 
+  color: #fff; 
+  border: 1px solid #fff; 
+}
+
+input:focus, textarea:focus {
+  border-color: #c0c0c0; 
+  outline: none;
+}
+
+.text-button {
+  background: none !important;
+  border: none !important;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: left;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.text-button:hover {
+  color: #6ddb3a; 
+}
+
+.non-click {
+  padding-left: 10px;
+  color: #ffffff;
+  text-align: left;
+  font-size: 30px;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-container {
+  background-color: #888383;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #6ddb3a;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+.download-link {
+  text-align: left;
+  margin: 20px 0;
+}
+
+.download-button {
+  background-color: #000000;
+  color: #888383;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background-color: #6ddb3a;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center; 
+}
+
+.project-card {
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;   
+  height: 175px;   
+  width: auto;                
+  border-radius: 10px;           
+}
+
+.card-1 {
+  background-image: url("./assets/lily-banse--YHSwy6uqvk-unsplash.jpg");
+}
+
+.card-2 {
+  background-image: url(".\assets\neda-astani-KWTkd7mHqKE-unsplash.jpg");
+}
+
+.card-3 {
+  background-image: url(".\assets\kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg");
+}
+
+.card-4 {
+  background-image: url(".\assets\austin-distel-wD1LRb9OeEo-unsplash.jpg");
+}
+
+.card-5 {
+  background-image: url(".\assets\shawn-powar-dkgxu60Y1RI-unsplash.jpg");
+}
+
+.card-6 {
+  background-image: url(".\assets\brendan-church-4bFKX8G419Q-unsplash.jpg");
+}
+
+@media (max-width: 1024px) {
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .navbar {
+    height: auto; 
+    padding: 10px; 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+.navbar-brand {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+.navbar .nav-link {
+    font-size: 1.2rem; 
+    padding: 8px;
+  }
+  }
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+.navbar-brand {
+    font-size: 1.8rem;
+  }
+
+.navbar .nav-link {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .main-content {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .download-button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .text-button, .non-click {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+.navbar-brand {
+    font-size: 1.5rem;
+  }
+
+.navbar .nav-link {
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+
+  .portfolio-content {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .text-button, .non-click {
+    font-size: 1.2rem;
+  }
+}
