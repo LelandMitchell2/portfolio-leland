@@ -1,6 +1,6 @@
 html, body {
   font-family: "Lucida Console", "Courier New", monospace;
-  background-color: #ff000088; 
+  background-color: #1a1a1a;
   color: white;
   height: 100%;
   margin: 0;
@@ -17,9 +17,9 @@ html, body {
 
 .main-content {
   flex: 1;
-  padding-top: 180px; 
-  padding-bottom: 80px; 
-  overflow: auto; 
+  padding-top: 180px;
+  padding-bottom: 80px;
+  overflow: auto;
 }
 
 .navbar {
@@ -28,40 +28,49 @@ html, body {
   background-size: cover;
   height: 180px;
   background-repeat: no-repeat;
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  z-index: 1000; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
-  color: #888383;
+  color: #6ddb3a;
   font-size: 3rem;
   font-weight: bold;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 5px #6ddb3a;
   white-space: nowrap;
+  transition: transform 0.2s;
+}
+
+.navbar .navbar-brand:hover {
+  transform: scale(1.1);
 }
 
 .navbar .nav-link {
-  display: flex;
-  align-items: center;
-  color: #888383;
+  color: #6ddb3a;
   font-size: 1.5rem;
   font-weight: bold;
-  text-shadow: 2px 2px 2px #000;
-  padding: 10px;
-  white-space: nowrap;
+  text-shadow: 2px 2px 5px #6ddb3a;
+  transition: transform 0.2s;
 }
 
 .navbar .nav-link:hover {
-  color: #6ddb3a; 
+  transform: scale(1.1);
+  color: #fff;
 }
+
 
 .nav-item {
   margin-left: 20px;
@@ -85,6 +94,22 @@ input:focus, textarea:focus {
   outline: none;
 }
 
+.button-container .text-button {
+  background: none;
+  border: none;
+  color: #6ddb3a;
+  cursor: pointer;
+  text-align: left;
+  font-size: 30px;
+  text-decoration: underline;
+  transition: text-shadow 0.3s;
+}
+
+.text-button:hover {
+  text-shadow: 0px 0px 10px #6ddb3a;
+  color: #fff;
+}
+
 .text-button {
   background: none !important;
   border: none !important;
@@ -95,9 +120,6 @@ input:focus, textarea:focus {
   text-decoration: underline;
 }
 
-.text-button:hover {
-  color: #6ddb3a; 
-}
 
 .non-click {
   padding-left: 10px;
@@ -173,12 +195,19 @@ ul li {
 }
 
 .project-card {
-  background-size: cover;        
-  background-position: center;   
-  background-repeat: no-repeat;   
-  height: 175px;   
-  width: auto;                
-  border-radius: 10px;           
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 175px;
+  width: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.9);
 }
 
 .card-1 {
