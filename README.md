@@ -14,6 +14,8 @@
   ## Installation
   My portfolio is located at https://lelands-portfolio.netlify.app/
 
+  ![alt text](<Screenshot 2025-03-22 202447.png>)
+
   ## Usage
   N/A
 

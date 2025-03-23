@@ -4,6 +4,14 @@ export default function Home() {
       <div className="row">
         <div className="col-md-8 mx-auto text-center">
           <h1>About Me</h1>
+          <div className="about-image">
+            <img src="src\assets\20240908_135442.jpg" alt="Profile"
+            style={{
+            width: '300px',
+            height: '300px',
+            objectFit: 'cover'
+            }} />
+    </div>
           <p className="lead">
             Hello, my name is Leland Mitchell. I am an aspiring full-stack web developer with a passion for creating and designing websites.
           </p>
